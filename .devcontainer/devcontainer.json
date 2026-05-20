@@ -1,0 +1,23 @@
+{
+    "name": "Aula Java 25",
+    "image": "mcr.microsoft.com/devcontainers/java:25",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack"
+            ],
+            "settings": {
+                "java.compile.nullAnalysis.mode": "automatic",
+                "java.configuration.runtime": [
+                    {
+                        "name": "JavaSE-25",
+                        "path": "/usr/local/sdkman/candidates/java/current",
+                        "default": true
+                    }
+                ],
+                "java.jdt.ls.vmargs": "--enable-preview",
+                "java.project.sourceLanguageLevel": "25" 
+            }
+        }
+    }
+}
