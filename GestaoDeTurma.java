@@ -1,5 +1,5 @@
 /*TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
- Autora: Ana Luisa Vieira Moraes*/
+Ana Luisa Vieira Moraes*/
 
  import java.util.Scanner; 
  
