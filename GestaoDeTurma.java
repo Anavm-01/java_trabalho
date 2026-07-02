@@ -1,25 +1,6 @@
 /*TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
 Ana Luisa Vieira Moraes*/
 
- import java.util.Scanner; 
- 
-class IO { 
-    private static Scanner scanner = new Scanner(System.in); 
- 
-    public static void println(String s) { 
-        System.out.println(s); 
-    } 
- 
-    public static void print(String s) { 
-        System.out.print(s); 
-    } 
- 
-    public static String readln(String prompt) { 
-        System.out.print(prompt); 
-        return scanner.nextLine(); 
-    } 
-} 
- 
 public class GestaoDeTurma { 
  
     public static void main(String[] args) { 
