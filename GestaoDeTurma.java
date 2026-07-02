@@ -167,12 +167,12 @@ public class GestaoDeTurma {
         for (int i = 0; i < total - 1; i++) { 
             for (int j = 0; j < total - 1 - i; j++) { 
                 if (nomes[j].compareToIgnoreCase(nomes[j + 1]) > 0) { 
-                    // Troca nomes 
+                   
                     String tempNome = nomes[j]; 
                     nomes[j] = nomes[j + 1]; 
                     nomes[j + 1] = tempNome; 
  
-                    // Troca médias 
+                   
                     double tempMedia = medias[j]; 
                     medias[j] = medias[j + 1]; 
                     medias[j + 1] = tempMedia; 
