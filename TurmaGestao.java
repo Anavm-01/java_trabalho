@@ -31,14 +31,15 @@ var medias = new double[20];
                         String nomeProcurado = IO.readln("Informe o nome do aluno: ");
                         int indice = pesquisarAluno(alunos, totalAlunos, nomeProcurado);
 
-                       String situacao;
-                        if (medias[indice] >= 7.0) {
-                         situacao = "Aprovado";
-                         } else {
-                           situacao = "Reprovado";
-}
+                        if (indice != -1) {
+                            String situacao = (medias[indice] >= 7.0) ? "Aprovado" : "Reprovado";
+                            IO.println("Aluno encontrado!");
+                            IO.println("Nome: " + alunos[indice] +
+                                       " | Média: " + medias[indice] + " | Situação: " + situacao);
+                        } else {
+                            IO.println("Aluno não encontrado!");
                         }
-                    
+                    }
                     break;
                 case 4:
                     IO.println("Encerrando o programa...");
@@ -48,17 +49,17 @@ var medias = new double[20];
                     break;
             }
         } while (opcao != 4);
-    
+}
 
     int cadastrarAlunos(String[] nomes, double[] medias) {
         int quantidade;
         do {
            quantidade = Integer.parseInt(IO.readln("Quantos alunos deseja cadastrar (máximo 20): "));
-           if (quantidade < 1 || quantidade > 20 {
+           if (quantidade < 1 || quantidade > 20) {
                IO.println("Quantidade inválida!  Deve ser entre 1 e 20.");
            }
       } while (quantidade < 1 || quantidade > 20);
-        )
+        
 
         for (int i = 0; i < quantidade; i++) {
             IO.println("\n--- Cadastro do Aluno " + (i + 1) + " ---");
