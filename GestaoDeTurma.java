@@ -1,5 +1,5 @@
-//TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
-//Autor(es):Ana Luisa Vieira Moraes e Maria Luíza Bomfim Augusto
+/*TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
+Autor(es):Ana Luisa Vieira Moraes e Maria Luíza Bomfim Augusto*/
 
 void main() {
 var alunos = new String[20];
@@ -94,7 +94,7 @@ if (medias[indice] >= 7) {
         IO.println("Média inválida! Deve estar entre 0 e 10.");
     }
 
-} while (media <= 0 || media >= 10);
+} while (media < 0 || media > 10);
             medias[i] = media;
         }
 
