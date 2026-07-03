@@ -1,5 +1,5 @@
 /*TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
-Ana Luisa Vieira Moraes*/
+Autor(es):Ana Luisa Vieira Moraes e Maria Luíza Bomfim Augusto*/
 
 void main(String[] args) {
 var alunos = new String[20];
