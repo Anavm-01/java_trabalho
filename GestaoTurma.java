@@ -2,8 +2,8 @@
 Ana Luisa Vieira Moraes*/
 
 void main(String[] args) {
-        String[] nomes = new String[20];
-        double[] medias = new double[20];
+var alunos = new String[20];
+var medias = new double[20];
         int totalAlunos = 0;
         int opcao = 0;
 
@@ -24,23 +24,23 @@ void main(String[] args) {
 
             switch (opcao) {
                 case 1:
-                    totalAlunos = cadastrarAlunos(nomes, medias);
-                    ordenarDados(nomes, medias, totalAlunos);
+                    totalAlunos = cadastrarAlunos(alunos, medias);
+                    ordenarDados(alunos, medias, totalAlunos);
                     break;
                 case 2:
-                    listarAlunos(nomes, medias, totalAlunos);
+                    listarAlunos(alunos, medias, totalAlunos);
                     break;
                 case 3:
                     if (totalAlunos == 0) {
                         IO.println("Nenhum aluno cadastrado.");
                     } else {
                         String nomeProcurado = IO.readln("Informe o nome do aluno: ");
-                        int indice = pesquisarAluno(nomes, totalAlunos, nomeProcurado);
+                        int indice = pesquisarAluno(alunos, totalAlunos, nomeProcurado);
 
                         if (indice != -1) {
                             String situacao = (medias[indice] >= 7.0) ? "Aprovado" : "Reprovado";
                             IO.println("Aluno encontrado!");
-                            IO.println("Nome: " + nomes[indice] +
+                            IO.println("Nome: " + alunos[indice] +
                                        " | Média: " + medias[indice] + " | Situação: " + situacao);
                         } else {
                             IO.println("Aluno não encontrado!");
@@ -160,4 +160,6 @@ void main(String[] args) {
             }
         }
     }
+
+
 
