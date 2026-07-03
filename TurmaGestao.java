@@ -88,7 +88,7 @@ var medias = new double[20];
         IO.println("Média inválida! Deve estar entre 0 e 10.");
     }
 
-} while (media < 0 || media > 10);
+} while (media <= 0 || media >= 10);
             medias[i] = media;
         }
 
