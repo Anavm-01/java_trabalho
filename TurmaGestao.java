@@ -1,3 +1,6 @@
+/*TRABALHO FINAL - ALGORITMO E PROGRAMAÇÃO
+Autor(es):Ana Luisa Vieira Moraes e Maria Luíza Bomfim Augusto*/
+
 void main() {
 var alunos = new String[20];
 var medias = new double[20];
